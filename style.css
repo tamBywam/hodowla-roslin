@@ -1,0 +1,87 @@
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controls {
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center; 
+  }
+  
+  .control-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .control {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .beds {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .flowerbed {
+    background-image: url('images/flowerbed.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    position: relative;
+  }
+  .plant-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;
+    margin: 10px;
+    margin-bottom: 105px;
+    position: relative;
+    left: -80px;
+  }
+  .plant {
+    height: 80px;
+    max-height: 60vh;
+    transition: transform 0.3s;
+    transform-origin: bottom center;
+  }
+  .withered {
+    filter: hue-rotate(90deg) brightness(0.6);
+  }
+  .message {
+    position: fixed;
+    bottom: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  .beds {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+  }

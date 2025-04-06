@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="control-box">
+          <div class="control" onclick="selectPlant('images/plant1.png')">🔮</div>
+          <div class="control" onclick="selectPlant('images/plant2.png')">🍄</div>
+          <div class="control" onclick="selectPlant('images/plant3.png')">🍄‍🟫</div>
+        </div>
+        
+        <div class="control-box">
+          <div class="control" onclick="waterPlants()">💧</div>
+          <div class="control" onclick="addFertilizer()">💩</div>
+          <div class="control" onclick="rescuePlants()">🚑</div>
+          <div class="control" onclick="cutPlant()">🪓</div>
+        </div>
+      </div>
+
+  <div class="beds">
+    <div class="flowerbed" id="bed-0"></div>
+    <div class="flowerbed" id="bed-1"></div>
+  </div>
+  <div class="message" id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
